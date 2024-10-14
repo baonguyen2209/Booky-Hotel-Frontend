@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "--font-marcellus";
+    src: local("Marcellus-Regular"),
+    url('./assets/fonts/Marcellus-Regular.ttf') format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "--font-urbanist";
+    src: local("Urbanist-VariableFont_wght"),
+    url('./assets/fonts/Urbanist-VariableFont_wght.ttf') format("truetype");
+    font-weight: 100 900;
+}
+
+@layer base {
+    body {
+        @apply font-secondary text-secondary;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-primary text-primary;
+    }
+
+    .h1 {
+        @apply text-[54px] lg:text-[64px] uppercase tracking-[2px] leading-tight;
+    }
+    .h2 {
+        @apply text-[50px];
+    }
+    .h3 {
+        @apply text-[26px];
+    }
+  :root {
+        --radius: 0.5rem;
+    }
+}
+
